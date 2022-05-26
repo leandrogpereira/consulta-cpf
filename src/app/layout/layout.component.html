@@ -1,0 +1,55 @@
+<mat-toolbar class="example-header">
+    <div class="d-flex flex-column">
+        <h1 class="text-uppercase session-title">Nova admissão cooperado</h1>
+        <app-breadcrumb></app-breadcrumb>
+    </div>
+    <div class="d-flex">
+        <div class="alert-icon" style="margin-right: 20px;">
+            <mat-icon class="header-icon" aria-hidden="false">notifications_none</mat-icon>
+        </div>
+        <div class="alert-icon" style="margin-right: 10px;">
+            <span class="text-uppercase rounded-pill px-3 py-1 user">viacred</span>
+        </div>
+        <div class="alert-icon">
+            <mat-icon class="header-icon" aria-hidden="false">account_circle</mat-icon>
+        </div>
+    </div>
+</mat-toolbar>
+
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav"
+                 [fixedInViewport]="true" [fixedTopGap]="0"
+                 [fixedBottomGap]="0">
+        <mat-nav-list>
+            <a mat-list-item href="/" class="menu-logo">
+                <img src="../../assets/logo.png" class="logo-img">
+            </a>
+            <a mat-list-item href="/">
+                <mat-icon class="text-white menu-icon mt-3" aria-hidden="false">menu</mat-icon>
+            </a>
+            <a mat-list-item href="/">
+                <mat-icon class="text-white menu-icon" aria-hidden="false">search</mat-icon>
+            </a>
+            <a mat-list-item href="/">
+                <mat-icon class="text-white menu-icon" aria-hidden="false">star</mat-icon>
+            </a>
+            <a mat-list-item href="/">
+                <mat-icon class="text-white menu-icon" aria-hidden="false">sms</mat-icon>
+            </a>
+            <a mat-list-item href="/">
+                <mat-icon class="text-white menu-icon" aria-hidden="false">tune</mat-icon>
+            </a>
+            <a mat-list-item href="/">
+                <mat-icon class="text-white menu-icon" aria-hidden="false">account_balance</mat-icon>
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+  </mat-sidenav-container>
+
+  <div class="page-content">
+      <router-outlet></router-outlet>
+  </div>
+
+<mat-toolbar class="example-footer">
+    <button type="button" class="btn btn-secondary" style="margin-left: 85px;">Dicas para admissão</button>
+</mat-toolbar>

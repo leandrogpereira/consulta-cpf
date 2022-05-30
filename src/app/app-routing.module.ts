@@ -13,20 +13,6 @@ const routes: Routes = [
   ]}
 ];
 
-// const routes: Routes = [
-//   { path: '', children: [
-//     {
-//       path: '', component: LayoutComponent, children: [
-//         { path: '', data: { title: 'Lista de registros' }, component: PessoasComponent },
-//         {
-//           path: 'pessoas',
-//           loadChildren: () => import('./pessoas/pessoas.module').then(m => m.PessoasModule)
-//         }
-//       ]
-//     }
-//   ]}
-// ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
